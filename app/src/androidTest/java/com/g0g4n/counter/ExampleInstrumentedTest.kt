@@ -1,4 +1,4 @@
-package com.example.counter
+package com.g0g4n.counter
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
