@@ -9,7 +9,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.counter"
+        applicationId = "com.g0g4n.counter"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
