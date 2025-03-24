@@ -1,5 +1,6 @@
 package com.example.counter
 
+import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -48,17 +49,13 @@ class MainActivity : ComponentActivity() {
         // Make the app full screen (draw behind status bar)
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        // Make the status bar transparent
-        window.statusBarColor = android.graphics.Color.TRANSPARENT
-
         setContent {
             CounterTheme {
                 val density = LocalDensity.current
                 Surface(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(bottom = with(density) { WindowInsets.navigationBars.getBottom(density).toDp() })
-                        .clip(RoundedCornerShape(30.dp)),
+                        .padding(bottom = with(density) { WindowInsets.navigationBars.getBottom(density).toDp() }),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     CounterApp()
